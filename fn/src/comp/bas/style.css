@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+  }
+  
+  html {
+    background: #e9cfa2;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+.h{
+    color: rgb(0, 0, 0);
+}
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(3 ,minmax(300px,500px));
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 50px;
+    margin: 0px 50px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    align-items: center;
+    background-color: white;
+}
+.image{
+   width: 250px;
+   height: 250px;
+   object-fit: cover;
+}
+.cardtitle{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+.card-description{
+    text-align: center;
+    color: gray;
+    margin-top: 12px;
+
+}
+.price{
+    text-align: center;
+    margin-top: 12px;
+    font: 15px;
+}
+.btn{
+    padding: 10px 60px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    margin: 20px 0px 20px 48px;
+}
+.button-group-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+.button-item{
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+   cursor: pointer;
+}
+.button-item:last-child{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.button-item:first-child{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.button-item:hover,
+.button-item:focus{
+    box-shadow: inset 0px -20px 0px -15px rebeccapurple;
+    color: rebeccapurple;
+}
+@media(max-width:650px){
+    .main-container{
+        grid-template-columns: repeat(1 ,minmax(300px,500px));
+    }
+}
